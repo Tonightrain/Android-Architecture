@@ -4,8 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_margin="32dp"
+    tools:context=".view.MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_arch_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/arch_activity" />
+
+            <Button
+                android:id="@+id/button_login_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_activity"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
